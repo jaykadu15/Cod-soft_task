@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 {
+            margin: 0;
+            color: #007bff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 0.5rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .hero {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            background-color: #fff;
+            color: #007bff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #e9ecef;
+        }
+        .features {
+            padding: 4rem 2rem;
+            background-color: #fff;
+        }
+        .features h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #007bff;
+        }
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .feature {
+            flex: 1 1 250px;
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+        .feature h3 {
+            color: #007bff;
+        }
+        .cta {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .cta h2 {
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .feature-grid {
+                flex-direction: column;
+            }
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>MeBrand</h1>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#cta">Get Started</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to My Amazing Service</h2>
+        <p>Discover how we can transform your ideas into reality with our innovative solutions.</p>
+        <a href="#cta" class="btn">Learn More</a>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Easy to Use</h3>
+                <p>Our platform is intuitive and user-friendly, designed for everyone.</p>
+            </div>
+            <div class="feature">
+                <h3>Reliable</h3>
+                <p>Built with the latest technology for maximum uptime and security.</p>
+            </div>
+            <div class="feature">
+                <h3>Affordable</h3>
+                <p>Get premium features without breaking the bank.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <h2>Ready to Get Started?</h2>
+        <p>Join thousands of satisfied users today.</p>
+        <a href="mailto:contact@mebrand.com" class="btn">Contact Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MeBrand. All rights reserved. | <a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+</html>
